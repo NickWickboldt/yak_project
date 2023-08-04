@@ -24,7 +24,7 @@ body{
 .back-to-top{
   padding-top:1vmin;
 }
-.back-to-top:hover, .github-link:hover{
+.back-to-top:hover{
   text-decoration: underline solid black;
   font-weight:bold;
 }
@@ -34,9 +34,18 @@ body{
   text-align: start;
 }
 .github-link{
-  padding-top:1vmin;
-  padding-right:1vmin;
+  width: 4vmin;
   text-align: end;
+  width: 100%;
+}
+.github-icon{
+  width:4vmin;
+  padding-right:1vmin;
+  padding-top:1vmin;
+  transition: .3s ease;
+}
+.github-icon:hover{
+  width:4.5vmin;
 }
 .nav{
   display: flex;
@@ -53,7 +62,6 @@ body{
 }
 .nav-item{
   background-color: grey;
-  color:darkslategrey;
   text-align: center;
   font-size:2vmin;
   width:100%;
@@ -158,6 +166,7 @@ a:visited{
 .title{
   font-size: 10vmin;
   text-align: center;
+  color: rgba(245, 245, 245, 0.616);
 }
 .pull-tab-container{
   width: 90%;
@@ -248,6 +257,7 @@ a:visited{
   font-size: 10vmin;
   text-align: center;
   padding:10vmin;
+  color: rgba(245, 245, 245, 0.616);
 }
 .biblio-header{
   padding:1vmin;
@@ -267,4 +277,16 @@ a:visited{
   text-indent: -10vmin;
   font-size: 2vmin;
   padding:1vmin;
+}
+
+@media (width <= 100vh){
+  .content-box{
+    display: block;
+  }
+  .image-box{
+    padding: 2vmin;
+  }
+  .text-title{
+    text-align: center;
+  }
 }
